@@ -1,0 +1,23 @@
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2.title {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+
+  .carousel{
+    .carousel-inner{
+      .carousel-item{
+        & img{
+          width: 37rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}

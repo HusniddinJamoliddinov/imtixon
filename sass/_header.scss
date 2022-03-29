@@ -1,0 +1,95 @@
+.header {
+  position: relative;
+  background-image: url(../images/header/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 17rem;
+
+  .hero {
+    padding-top: 13rem;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .title {
+        font-size: 4.8rem;
+        line-height: 1.5;
+        color: $light;
+        margin-bottom: 3rem;
+      }
+      .text {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: $light;
+        margin-bottom: 6rem;
+      }
+      .hero-form {
+        width: 80%;
+        @include center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        .text-div {
+          @include center;
+          width: 65%;
+
+          padding: 1rem 4rem 1rem 2rem;
+          background-color: $lightred;
+          border-radius: 1.5rem 0% 0% 1.5rem;
+          p {
+            margin-bottom: 0;
+          }
+        }
+        .btn-hero {
+          padding: 1rem 3rem;
+          width: 35%;
+          @include center;
+          color: $light;
+          border-radius: 0 1.5rem 1.5rem 0;
+          background-color: $lightorange;
+        }
+      }
+    }
+  }
+
+  .header-list {
+    margin-bottom: -7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .item {
+      @include horizont;
+      border-radius: 1rem;
+      padding: 2rem;
+      color: $textcolor;
+      background-color: $light;
+      column-gap: 1rem;
+      box-shadow: 0px 22px 40px rgba(142, 108, 154, 0.1), 0px 8.47407px 12.7407px rgba(142, 108, 154, 0.0607407), 0px 1.79259px 3.25926px rgba(142, 108, 154, 0.0392593);
+
+      .item-img {
+        width: 6rem;
+        height: auto;
+      }
+
+      .item-info {
+        row-gap: 0.5rem;
+
+        .text1 {
+          font-size: 1.2rem;
+          line-height: 1.8;
+          margin-bottom: 0;
+        }
+
+        .text2 {
+          font-size: 2rem;
+          line-height: 1.5;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

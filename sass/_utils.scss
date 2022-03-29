@@ -1,0 +1,39 @@
+$qizil: #e24329;
+$lightred: #fff3eb;
+$lightblue: #ecedff;
+$light: #fff;
+$textcolor: #444b51;
+$lightorange: #ff6a00;
+
+@mixin btn {
+  background-color: $qizil;
+  color: $light;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $light;
+    color: $qizil;
+    border: 1px solid $qizil;
+  }
+}
+
+@mixin center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin horizont {
+  display: flex;
+  align-items: center;
+}
+
+@mixin vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
