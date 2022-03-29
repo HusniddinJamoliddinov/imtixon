@@ -408,3 +408,24 @@ section {
   width: 37rem;
   height: auto;
 }
+
+.application {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+.application .left {
+  width: 50%;
+}
+.application .left h2.title {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.application .left .text {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+}
